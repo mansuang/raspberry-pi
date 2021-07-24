@@ -16,3 +16,6 @@ curl --location --request POST 'https://notify-api.line.me/api/notify' \
 --data-urlencode 'message={เมล่อน}' \
 --data-urlencode "imageFullsize=https://{your-bucket-name}.s3-ap-southeast-1.amazonaws.com/images/${dt}.jpg" \
 --data-urlencode "imageThumbnail=https://{your-bucket-name}.s3-ap-southeast-1.amazonaws.com/images/${dt}.jpg"
+
+# Set crontab for example
+# 0       12      *       *       *       bash /home/pi/snapshort-to-line.sh
